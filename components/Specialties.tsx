@@ -1,11 +1,11 @@
 import Link from "next/link";
+import Photo from "@/components/Photo";
 import { specialties } from "@/data/content";
 
 export default function Specialties() {
   return (
-    <section id="specialties" className="bg-white px-6 py-20 md:px-16 md:py-28">
-      <div className="grid gap-14 lg:grid-cols-[38%_1fr] lg:gap-20">
-        {/* Left: heading + image placeholder */}
+    <section id="specialties" className="bg-cream px-6 py-20 md:px-16 md:py-28">
+      <div className="grid content-start gap-x-16 gap-y-16 md:grid-cols-2">
         <div>
           <h2 className="font-heading text-4xl font-light leading-[1.2] md:text-5xl">
             {specialties.heading}{" "}
@@ -14,10 +14,14 @@ export default function Specialties() {
             </span>{" "}
             {specialties.headingEnd}
           </h2>
-          <div className="mt-10 aspect-[4/5] w-full bg-sand" />
+          <Photo
+            src="/images/specialties.jpg"
+            alt="Soft light through eucalyptus leaves"
+            sizes="(min-width: 1024px) 38vw, 90vw"
+            className="mt-10 aspect-[4/5] w-full"
+          />
         </div>
 
-        {/* Right: 2-column service grid */}
         <div className="grid gap-x-16 gap-y-16 md:grid-cols-2">
           {specialties.items.map((s) => (
             <article key={s.title} className="flex flex-col">

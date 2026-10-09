@@ -55,14 +55,20 @@ export const whoIHelp = {
     {
       title: "High-achieving adults",
       text: "Thoughtful, self-aware, and quietly exhausted? I help adults who feel stuck in overthinking, constant worry, or always bracing for something to go wrong find steadier ground.",
+      image: "/images/help-1.jpg",
+      alt: "Woman journaling by a sunlit window",
     },
     {
       title: "Adults healing from trauma",
       text: "Whether it was a single event or long-standing patterns from childhood, relationships, or chronic stress, we'll work at a careful pace that prioritizes safety and stabilization.",
+      image: "/images/help-2.jpg",
+      alt: "Person walking alone on a quiet beach",
     },
     {
       title: "Burned-out professionals & creatives",
       text: "Entrepreneurs, creatives, and professionals who feel disconnected after years of pushing through can slow down, reconnect, and build more sustainable ways of living and working.",
+      image: "/images/help-3.jpg",
+      alt: "Creative workspace with plants and a notebook in warm light",
     },
   ],
 };

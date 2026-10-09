@@ -1,9 +1,10 @@
 import Link from "next/link";
+import Photo from "@/components/Photo";
 import { scheduleCTA } from "@/data/content";
 
 export default function ScheduleCTA() {
   return (
-    <section id="contact" className="relative overflow-hidden py-20 md:py-28">
+    <section id="contact" className="relative overflow-x-clip py-20 md:py-28">
       <div className="grid gap-14 lg:grid-cols-[1fr_36%]">
         <div className="px-6 lg:pl-[18%] lg:pr-10">
           <p className="text-[11px] uppercase tracking-[0.2em]">
@@ -24,12 +25,22 @@ export default function ScheduleCTA() {
           </Link>
         </div>
 
-        {/* Large image, bleeds off the right edge */}
-        <div className="aspect-[4/5] w-[85%] justify-self-end bg-sand lg:w-full" />
+        <Photo
+          src="/images/cta-main.jpg"
+          alt="Warm sunset over a quiet California beach"
+          sizes="(min-width: 1024px) 36vw, 85vw"
+          className="aspect-[4/5] w-[85%] justify-self-end lg:w-full"
+        />
       </div>
 
-      {/* Small image peeking in at the left edge */}
-      <div className="absolute bottom-16 left-0 hidden h-44 w-56 bg-accent/30 lg:block" />
+<div className="absolute bottom-16 left-0 hidden h-44 w-56 lg:block">
+  <Photo
+    src="/images/cta-peek.jpg"
+    alt="Dried grass on warm sand"
+    sizes="224px"
+    className="h-full w-full"
+  />
+</div>
     </section>
   );
 }

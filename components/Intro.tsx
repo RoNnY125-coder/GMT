@@ -1,13 +1,14 @@
+import Photo from "@/components/Photo";
 import { intro } from "@/data/content";
 
 export default function Intro() {
   return (
-    <section id="about" className="py-20 md:py-28 lg:pl-16">
+    <section className="py-20 md:py-28 lg:pl-16">
       <div className="grid items-center gap-14 lg:grid-cols-[1fr_30%] lg:gap-20">
         <div className="px-6 lg:max-w-3xl lg:px-0">
           <h2 className="font-heading text-4xl font-light leading-[1.2] md:text-5xl">
             {intro.heading}{" "}
-            <span className="font-script text-[1.3em] text-accent">
+            <span className="font-script text-[1.5em] leading-none text-accent">
               {intro.headingAccent}
             </span>
           </h2>
@@ -22,8 +23,12 @@ export default function Intro() {
           </div>
         </div>
 
-        {/* Tall image, bleeds off the right edge */}
-        <div className="aspect-[2/3] w-[85%] bg-sand lg:w-full" />
+        <Photo
+          src="/images/intro.jpg"
+          alt="Sunlit window with a linen curtain in a calm room"
+          sizes="(min-width: 1024px) 30vw, 85vw"
+          className="aspect-[2/3] w-[85%] lg:w-full"
+        />
       </div>
     </section>
   );

@@ -1,14 +1,20 @@
 import Link from "next/link";
+import Photo from "@/components/Photo";
 import { hero } from "@/data/content";
 
 export default function Hero() {
   return (
-    <section className="pb-20 pt-4 md:pb-28">
+    <section className="overflow-x-clip pb-20 pt-4 md:pb-28">
       <div className="grid gap-10 lg:grid-cols-[34%_1fr_9%] lg:gap-x-14">
-        {/* Main image, bleeds off the left edge */}
-        <div className="order-2 aspect-[7/8] w-[75%] bg-sand lg:order-1 lg:w-full" />
+        {/* 1. Main image, bleeds off the left edge */}
+        <Photo
+          src="/images/hero-main.jpg"
+          alt="Calm Santa Monica beach at golden hour"
+          priority
+          className="order-2 aspect-[7/8] w-[75%] lg:order-1 lg:w-full"
+        />
 
-        {/* Text */}
+        {/* 2. Text */}
         <div className="order-1 flex flex-col justify-between gap-16 px-6 lg:order-2 lg:px-0">
           <p className="max-w-md text-[11px] uppercase tracking-[0.2em]">
             {hero.eyebrow}
@@ -16,7 +22,7 @@ export default function Hero() {
           <div>
             <h1 className="font-heading text-5xl font-light leading-[1.15] md:text-6xl">
               {hero.headingStart}{" "}
-              <span className="font-script text-[1.3em] text-accent">
+              <span className="font-script text-[1.5em] leading-none text-accent">
                 {hero.headingAccent}
               </span>
             </h1>
@@ -30,8 +36,12 @@ export default function Hero() {
           </div>
         </div>
 
-        {/* Peeking second image, bleeds off the right edge */}
-        <div className="order-3 hidden h-[66%] self-end bg-accent/30 lg:block" />
+        {/* 3. Peeking image, bleeds off the right edge */}
+        <Photo
+          src="/images/hero-peek.jpg"
+          alt="Soft ocean waves on sand"
+          className="order-3 hidden h-[66%] self-end lg:block"
+        />
       </div>
     </section>
   );
