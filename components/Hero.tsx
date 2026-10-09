@@ -9,7 +9,7 @@ export default function Hero() {
         {/* 1. Main image, bleeds off the left edge */}
         <Photo
           src="/images/hero-main.jpg"
-          alt="Calm Santa Monica beach at golden hour"
+          alt=""
           priority
           className="order-2 aspect-[7/8] w-[75%] lg:order-1 lg:w-full"
         />
@@ -39,7 +39,7 @@ export default function Hero() {
         {/* 3. Peeking image, bleeds off the right edge */}
         <Photo
           src="/images/hero-peek.jpg"
-          alt="Soft ocean waves on sand"
+          alt=""
           className="order-3 hidden h-[66%] self-end lg:block"
         />
       </div>

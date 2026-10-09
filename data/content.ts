@@ -152,9 +152,7 @@ export const footer = {
     phone: "(000) 000-0000", // placeholder
   },
   serving: "In-person in Santa Monica & telehealth across California",
-legal: [
-  { label: "Back to top", href: "#" },
-],
+  legal: [{ label: "Back to top", href: "#" }],
 };
 
 export const aboutMaya = {
@@ -184,15 +182,15 @@ export const office = {
     { label: "The space", value: "Quiet, private, and comfortably uncluttered, with natural light" },
   ],
   images: [
-    {
-      src: "/images/office/office1.jpeg",
-      alt: "Quiet, private therapy office in Santa Monica with natural light",
-    },
-    {
-      src: "/images/office/office2.jpeg",
-      alt: "Calm, comfortable seating area in Dr. Maya Reynolds' Santa Monica therapy office",
-    },
-  ],  
+  {
+    src: "/images/office/office1.jpeg",
+    alt: "Therapy room in Santa Monica with tall windows, sheer curtains and a comfortable sofa",
+  },
+  {
+    src: "/images/office/office2.jpeg",
+    alt: "Calm seating area with a grey sofa, bookshelf and plant in Dr. Maya Reynolds' office",
+  },
+],
 };
 
 export const faqs = {
