@@ -14,7 +14,9 @@ export default function HowIWork() {
           </p>
           <h2 className="mt-5 font-heading text-4xl font-light leading-[1.15] md:text-5xl lg:text-6xl">
             {howIWork.heading}{" "}
-            <em className="text-accent">{howIWork.headingAccent}</em>
+            <span className="font-script text-[1.5em] text-accent">
+              {howIWork.headingAccent}
+            </span>
           </h2>
           <p className="mt-8 font-heading text-xl italic md:text-2xl">
             {howIWork.lead}

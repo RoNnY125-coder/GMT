@@ -41,9 +41,9 @@ export const hero = {
 export const intro = {
   heading: "You've been holding it together.",
   headingAccent: "You don't have to do it alone.",
-  lead: "Many of the people I work with look “functional” on the outside while quietly struggling with constant worry, tension in the body, and a sense of always bracing for something to go wrong.",
+  lead: "A warm, collaborative space to feel steadier, safer, and more yourself.",
   paragraphs: [
-    "I'm a licensed clinical psychologist offering therapy in Santa Monica for adults who feel overwhelmed by anxiety, stress, or the lingering effects of past experiences. Many are high-achieving, thoughtful, and self-aware, yet internally exhausted or stuck in overthinking.",
+    "Many of the people I work with look “functional” on the outside while quietly struggling with constant worry, tension in the body, and a sense of always bracing for something to go wrong. I'm a licensed clinical psychologist offering therapy in Santa Monica for adults who feel overwhelmed by anxiety, stress, or the lingering effects of past experiences.",
     "My approach is warm, collaborative, and grounded. Sessions are structured enough to feel supportive, with space for reflection and depth, and you'll always be a respected, active part of the process.",
   ],
 };

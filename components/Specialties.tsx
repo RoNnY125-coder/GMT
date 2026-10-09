@@ -10,13 +10,13 @@ export default function Specialties() {
 
         <h2 className="mx-auto mt-14 max-w-3xl text-center font-heading text-4xl font-light leading-[1.15] md:text-5xl lg:text-6xl">
           {specialties.heading}{" "}
-          <em className="text-accent">{specialties.headingAccent}</em>{" "}
+          <span className="font-script text-[1.5em] text-accent">{specialties.headingAccent}</span>
           {specialties.headingEnd}
         </h2>
 
         <h3 className="mt-16 text-center font-heading text-2xl font-light md:text-3xl">
           {specialties.listTitleStart}{" "}
-          <em className="text-accent">{specialties.listTitleAccent}</em>
+          <span className="font-script text-[1.5em] text-accent">{specialties.listTitleAccent}</span>
         </h3>
 
         <div className="mt-12 grid gap-12 md:grid-cols-3 md:gap-10">

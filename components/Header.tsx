@@ -11,8 +11,8 @@ export default function Header() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="sticky top-4 z-50 px-4">
-      <div className="mx-auto max-w-[1400px] rounded-2xl bg-cream px-6 py-4 shadow-sm md:px-12">
+    <header className="relative z-50 bg-cream px-6 py-6 md:px-16">
+      <div className="mx-auto max-w-[1600px]">
         <div className="flex items-center justify-between">
           {/* Wordmark */}
           <Link href="/" className="leading-none">

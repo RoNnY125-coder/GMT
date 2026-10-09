@@ -1,6 +1,12 @@
 import type { Metadata } from "next";
-import { Mulish, Cormorant_Garamond } from "next/font/google";
+import { Mulish, Cormorant_Garamond, Sacramento } from "next/font/google";
 import "./globals.css";
+
+const script = Sacramento({
+  subsets: ["latin"],
+  weight: "400",
+  variable: "--font-sacramento",
+});
 
 const mulish = Mulish({
   subsets: ["latin"],
@@ -27,7 +33,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`${mulish.variable} ${cormorant.variable}`}>
+    <html lang="en" className={`${mulish.variable} ${cormorant.variable} ${script.variable}`}>
       <body>{children}</body>
     </html>
   );

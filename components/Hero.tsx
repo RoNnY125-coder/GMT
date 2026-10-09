@@ -3,31 +3,35 @@ import { hero } from "@/data/content";
 
 export default function Hero() {
   return (
-    <section className="px-6 pb-20 pt-16 md:px-12 md:pb-28 md:pt-24">
-      <div className="mx-auto grid max-w-[1400px] items-center gap-12 lg:grid-cols-2 lg:gap-20">
+    <section className="pb-20 pt-4 md:pb-28">
+      <div className="grid gap-10 lg:grid-cols-[34%_1fr_9%] lg:gap-x-14">
+        {/* Main image, bleeds off the left edge */}
+        <div className="order-2 aspect-[7/8] w-[75%] bg-sand lg:order-1 lg:w-full" />
+
         {/* Text */}
-        <div>
-          <p className="text-xs uppercase tracking-[0.25em] text-accent">
+        <div className="order-1 flex flex-col justify-between gap-16 px-6 lg:order-2 lg:px-0">
+          <p className="max-w-md text-[11px] uppercase tracking-[0.2em]">
             {hero.eyebrow}
           </p>
-          <h1 className="mt-6 font-heading text-5xl font-light leading-[1.1] md:text-6xl lg:text-7xl">
-            {hero.headingStart}{" "}
-            <em className="text-accent">{hero.headingAccent}</em>
-          </h1>
-          <p className="mt-8 max-w-xl text-lg">{hero.subtext}</p>
-          <Link
-            href={hero.cta.href}
-            className="mt-10 inline-block rounded-full border border-ink px-8 py-4 text-xs uppercase tracking-[0.18em] transition-colors hover:bg-ink hover:text-cream"
-          >
-            {hero.cta.label}
-          </Link>
+          <div>
+            <h1 className="font-heading text-5xl font-light leading-[1.15] md:text-6xl">
+              {hero.headingStart}{" "}
+              <span className="font-script text-[1.3em] text-accent">
+                {hero.headingAccent}
+              </span>
+            </h1>
+            <p className="mt-8 max-w-xl text-[15px]">{hero.subtext}</p>
+            <Link
+              href={hero.cta.href}
+              className="mt-10 inline-block border-b border-ink pb-1 text-[11px] uppercase tracking-[0.2em] transition-colors hover:border-accent hover:text-accent"
+            >
+              {hero.cta.label}
+            </Link>
+          </div>
         </div>
 
-        {/* Images (placeholders until Part 2) */}
-        <div className="relative mx-auto grid w-full max-w-xl grid-cols-2 gap-4 md:gap-6">
-          <div className="aspect-[3/4] rounded-t-full bg-sand" />
-          <div className="mt-12 aspect-[3/4] rounded-2xl bg-accent/40" />
-        </div>
+        {/* Peeking second image, bleeds off the right edge */}
+        <div className="order-3 hidden h-[66%] self-end bg-accent/30 lg:block" />
       </div>
     </section>
   );

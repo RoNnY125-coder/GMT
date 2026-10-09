@@ -21,3 +21,7 @@ body {
   font-size: 1.05rem;
   line-height: 1.8;
 }
+
+.font-script {
+  font-family: var(--font-sacramento), cursive;
+}

@@ -11,7 +11,9 @@ export default function ScheduleCTA() {
           </p>
           <h2 className="mt-5 font-heading text-4xl font-light leading-[1.15] md:text-5xl lg:text-6xl">
             {scheduleCTA.heading}{" "}
-            <em className="text-accent">{scheduleCTA.headingAccent}</em>
+            <span className="font-script text-[1.5em] text-accent">
+              {scheduleCTA.headingAccent}
+            </span>
           </h2>
           <p className="mt-8 max-w-xl text-lg">{scheduleCTA.text}</p>
           <Link
