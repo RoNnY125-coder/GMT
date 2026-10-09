@@ -12,12 +12,12 @@ export default function HowIWork() {
           <p className="text-xs uppercase tracking-[0.25em] text-accent">
             {howIWork.eyebrow}
           </p>
-          <h2 className="mt-5 font-heading text-4xl font-light leading-[1.15] md:text-5xl lg:text-6xl">
+          <h2 className="mt-5 font-heading text-4xl font-light leading-[1.15] md:text-5xl">
             {howIWork.heading}{" "}
-            <span className="font-script text-[1.5em] text-accent">
+            <span className="block font-script text-[1.5em] leading-none text-accent">
               {howIWork.headingAccent}
             </span>
-          </h2>
+          </h2>         
           <p className="mt-8 font-heading text-xl italic md:text-2xl">
             {howIWork.lead}
           </p>

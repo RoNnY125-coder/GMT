@@ -70,7 +70,7 @@ export const whoIHelp = {
 export const expertise = {
   headingStart: "You deserve a space to slow down and be understood.",
   headingAccent: "Nothing here is too heavy to carry together.",
-  listTitleStart: "Areas of",
+  listTitleStart: "Our Areas of",
   listTitleAccent: "expertise",
   items: [
     "Anxiety",
