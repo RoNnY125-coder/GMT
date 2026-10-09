@@ -22,9 +22,21 @@ const cormorant = Cormorant_Garamond({
 });
 
 export const metadata: Metadata = {
-  title: "Anxiety & Trauma Therapist in Santa Monica, CA | Dr. Maya Reynolds, PsyD",
+  metadataBase: new URL("https://gmt-self.vercel.app"),
+  title: "Santa Monica Anxiety & Trauma Therapist | Dr. Maya Reynolds",
   description:
     "Warm, collaborative therapy for adults in Santa Monica and across California. Anxiety, trauma, burnout and perfectionism. In-person and telehealth.",
+  alternates: { canonical: "/" },
+  openGraph: {
+    title: "Santa Monica Anxiety & Trauma Therapist | Dr. Maya Reynolds",
+    description:
+      "Warm, collaborative therapy for adults in Santa Monica and across California. In-person and telehealth.",
+    url: "/",
+    siteName: "Dr. Maya Reynolds, PsyD",
+    locale: "en_US",
+    type: "website",
+    images: ["/images/hero-main.jpg"],
+  },
 };
 
 export default function RootLayout({

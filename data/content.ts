@@ -152,11 +152,9 @@ export const footer = {
     phone: "(000) 000-0000", // placeholder
   },
   serving: "In-person in Santa Monica & telehealth across California",
-  legal: [
-    { label: "Terms", href: "#" },
-    { label: "Privacy Policy", href: "#" },
-    { label: "Disclaimer", href: "#" },
-  ],
+legal: [
+  { label: "Back to top", href: "#" },
+],
 };
 
 export const aboutMaya = {
