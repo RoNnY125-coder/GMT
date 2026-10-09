@@ -152,3 +152,72 @@ export const footer = {
     { label: "Disclaimer", href: "#" },
   ],
 };
+
+export const aboutMaya = {
+  eyebrow: "Meet your therapist",
+  heading: "Hi, I'm Dr. Maya",
+  headingAccent: "Reynolds.",
+  credential: "Licensed Clinical Psychologist, PsyD · Santa Monica, CA",
+  paragraphs: [
+    "I'm a licensed clinical psychologist based in Santa Monica, California, offering therapy for adults who feel overwhelmed by anxiety, stress, or the lingering effects of past experiences. Many of the people I work with are high-achieving and self-aware, yet quietly exhausted.",
+    "My work often focuses on anxiety, panic, trauma, and burnout. I integrate CBT, EMDR, mindfulness-based practices, and body-oriented techniques to help you understand both the emotional and physiological sides of what you're experiencing.",
+    "I believe therapy works best when you feel respected, understood, and actively involved. If you're looking for a therapist who combines practical tools with depth-oriented work, and who understands the realities of a fast-paced life, I may be a good fit.",
+  ],
+  link: { label: "Request a consultation", href: "#contact" },
+};
+
+export const office = {
+  eyebrow: "Our office",
+  heading: "A calm space for",
+  headingAccent: "healing.",
+  text: [
+    "My Santa Monica office is a quiet, private space designed to feel calm and grounding, with natural light and a comfortable, uncluttered environment. Clients often share that the space itself helps them feel more at ease when they arrive.",
+    "Prefer to meet from home? I also offer secure telehealth sessions for clients located anywhere in California.",
+  ],
+  details: [
+    { label: "Location", value: "123th Street 45 W, Santa Monica, CA 90401" },
+    { label: "Sessions", value: "In person in Santa Monica or secure telehealth across California" },
+    { label: "The space", value: "Quiet, private, and comfortably uncluttered, with natural light" },
+  ],
+  images: [
+    {
+      src: "/images/office/office1.jpeg",
+      alt: "Quiet, private therapy office in Santa Monica with natural light",
+    },
+    {
+      src: "/images/office/office2.jpeg",
+      alt: "Calm, comfortable seating area in Dr. Maya Reynolds' Santa Monica therapy office",
+    },
+  ],  
+};
+
+export const faqs = {
+  heading: "Frequently asked",
+  headingAccent: "questions",
+  items: [
+    {
+      q: "Do you offer in-person and online therapy?",
+      a: "Yes. I offer in-person sessions at my quiet, private Santa Monica office and secure telehealth sessions for clients located in California.",
+    },
+    {
+      q: "Who do you work with?",
+      a: "I work with adults, including high-achieving professionals, entrepreneurs, and creatives, who feel overwhelmed by anxiety, stress, burnout, or the lingering effects of past experiences.",
+    },
+    {
+      q: "What does therapy with you look like?",
+      a: "My approach is warm, collaborative, and grounded. Sessions are structured enough to feel supportive, while leaving space for reflection and depth, and you're an active part of the process throughout.",
+    },
+    {
+      q: "What methods do you use?",
+      a: "I integrate evidence-based approaches including cognitive-behavioral therapy (CBT), EMDR, mindfulness-based practices, and body-oriented techniques.",
+    },
+    {
+      q: "Do you work with trauma, and how is it paced?",
+      a: "Yes. I work with single-incident trauma as well as complex, long-standing patterns. Trauma work is paced carefully, with an emphasis on safety and stabilization, so you feel more regulated in daily life and not just during sessions.",
+    },
+    {
+      q: "How do I get started?",
+      a: "Reach out through the contact section to request a consultation, and we'll talk about what you're looking for and whether we're a good fit.",
+    },
+  ],
+};
